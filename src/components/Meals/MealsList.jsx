@@ -4,9 +4,11 @@ import PromoText from './PromoText'
 
 const MealsList = () => {
   return (
-    <div><Meals/>
+    <React.Fragment>
+        
+        <Meals/>
     <PromoText/>
-    </div>
+    </React.Fragment>
   )
 }
 

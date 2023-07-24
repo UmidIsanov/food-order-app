@@ -7,7 +7,8 @@
   background-color: #f70a0a;
   color: white;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  /* justify-content: space-between; */
   align-items: center;
   padding: 0 10%;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
