@@ -3,7 +3,7 @@ import styles from './Modal.module.css';
 import ReactDOM from 'react-dom';
 
 const Backdrop = (props) => {
-  return <div className={styles.backdrop}></div>;
+  return <div className={styles.backdrop} onClick={props.onCloseCard} ></div>;
 };
 
 const ModalWindow = (props) => {
@@ -15,11 +15,10 @@ const ModalWindow = (props) => {
 };
 
 const Modal = (props) => {
-  const portalElement = document.getElementById('overlays'); // Move this line inside the component
-
+  const portalElement = document.getElementById('overlays'); 
   return (
     <React.Fragment>
-      {ReactDOM.createPortal(<Backdrop />, portalElement)}
+      {ReactDOM.createPortal(<Backdrop onCloseCard = {props.onClick} />, portalElement) }
       {ReactDOM.createPortal(<ModalWindow>{props.children}</ModalWindow>, portalElement)}
     </React.Fragment>
   );
