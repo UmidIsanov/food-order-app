@@ -10,7 +10,7 @@ return (
             <div className={styles.description}>{props.description}</div>
             <div className ={styles.price}>{formattedPrice}</div>
         </div>
-        <div><MealItmeForm/></div>
+        <div><MealItmeForm id ={props.id}/></div>
 
     </li>
 )

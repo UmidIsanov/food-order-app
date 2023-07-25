@@ -1,9 +1,9 @@
 import Input from "../../UI/Input"
 import styles from "./MealItemForm.module.css"
-const MealItmeForm = () => {
+const MealItmeForm = (props) => {
   return <form className={styles.form}>
     <Input label ='Количество' input ={{
-        id: 'amount',
+        id: props.id,
         type: 'number',
         min: '1',
         step: '1',

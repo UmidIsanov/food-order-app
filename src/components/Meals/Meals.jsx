@@ -33,7 +33,7 @@ const DUMMY_MEALS = [
   
 const Meals = () => {
   
-const mealList = DUMMY_MEALS.map(meal => <li><MealItem key ={meal.id} name = {meal.name} description = {meal.description} price = {meal.price} /></li>)
+const mealList = DUMMY_MEALS.map(meal => <li><MealItem key ={meal.id} id ={meal.id} name = {meal.name} description = {meal.description} price = {meal.price} /></li>)
 
   return (
 <section className={styles.meals}>
