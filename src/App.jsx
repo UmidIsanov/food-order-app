@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import Header from "./components/Layout/Header";
 import MealsList from "./components/Meals/MealsList";
 import Cart from "./components/Cart/Cart";
+import CartContexProvider from "./store/CartContexProvider";
 function App() {
  
  const [cardIsVisible, setCardIsVisible]= useState(false)
@@ -14,14 +15,14 @@ function App() {
   setCardIsVisible(false)
  }
   return (
-   <React.Fragment>
+   <CartContexProvider>
     <Header onShowCard = {showCardHandler}/>
    {cardIsVisible && <Cart onCloseCard = {hideCardHandler}/>}
 
     <main>
       <MealsList/>
     </main>
-   </React.Fragment>
+   </CartContexProvider>
   );
 }
 
