@@ -1,15 +1,14 @@
-import React from 'react'
-import Meals from './Meals'
-import PromoText from './PromoText'
+import React from "react";
+import Meals from "./Meals";
+import PromoText from "./PromoText";
 
 const MealsList = () => {
   return (
     <React.Fragment>
-        
-        <Meals/>
-    <PromoText/>
+      <Meals />
+      <PromoText />
     </React.Fragment>
-  )
-}
+  );
+};
 
-export default MealsList
+export default MealsList;
